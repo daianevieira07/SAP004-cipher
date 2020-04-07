@@ -1,14 +1,57 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
-  </body>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Caixinha das Senhas</title>
+</head>
+
+<body>
+  <div class="mainBox">
+    <h1> Caixinha das Senhas </h1>
+
+    <div class="h2">
+    <h2>    Se você tem problemas pra lembrar suas senhas, você está no lugar certo! </h2>
+  </div>
+    <h3>Aqui você pode criar uma senha fácil de lembrar e depois criptografá-la </h3>
+    <h3> para salvar onde quiser, assim mesmo que vejam sua senha, ninguém saberá o que é!</h3>
+
+
+    <span id="label"> Escolha seu código "De 1 a 33" </span> 
+    <button id="btnLess" class="button">-</button>
+    <span id="deslocamento">1</span>
+    <button id="btnMore" class="button">+</button><br /><br />
+
+
+    <form id="formValor">
+      <input type="radio" checked="true" name="valorRadio" value="cifrar"><label>Cifrar</label>
+      <input type="radio" name="valorRadio" value="decifrar"><label>Decifrar</label>
+    </form>
+
+    <textarea name="textoInicial" id="textoInicial" class="caixaTexto" cols="30" rows="10"
+      required></textarea><br /><br />
+    <button id="calculate">Fazer a mágica acontecer! </button><br /><br />
+    <textarea name="textoRetorno" id="textoRetorno" class="caixaTexto" cols="30" rows="10"
+      disabled></textarea>
+      <button id="refazer" type="reset"> Refazer </button>
+      
+
+    
+      
+    
+
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
+
+
+<script src="index.js" type="module"></script>
+</body>
+
 </html>
