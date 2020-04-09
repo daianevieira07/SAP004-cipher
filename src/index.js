@@ -1,9 +1,7 @@
-import cipher from './cipher.js';
+/*import cipher from './cipher.js';*/
 
 
-var deslocamento = document.getElementById("deslocamento")
-
-
+let deslocamento = document.getElementById("deslocamento")
 let deslocamento1 = 1
 
 function less() {
@@ -17,28 +15,42 @@ function less() {
 function more() {
     if (deslocamento1 < 33) {
         deslocamento1++;
-        
+
         deslocamento.innerHTML = deslocamento1
     }
 }
 
 
-let enviar = function () {
-    let deslocamento = document.getElementById("deslocamento").value
-    let formValor = document.getElementById("formValor")
-    let texto = document.getElementById("textoInicial").value
-    let retorno
+function escolha() {
     if (formValor.valorRadio.value == "cifrar") {
-        retorno = cipher.encode(deslocamento, texto)
+     
+      cifrar()
     }
-    alert(retorno)
+    else {
+     
+     decifrar ()
+    }
 }
 
-document.getElementById("btnLess").addEventListener("click", less)
-document.getElementById("btnMore").addEventListener("click", more)
-document.getElementById("botao").addEventListener("click", enviar)
+function cifrar() {
+      let textoInicial = document.getElementById("textoInicial").value;
+      let novoDeslocamento = Number(deslocamento.value) 
+      let textoFinal = cipher.encode(novoDeslocamento, textoInicial);
+      document.getElementById("textoFinal").innerHTML = textoFinal;
+  }
+  
+  function decifrar() {
+      let textoInicial = document.getElementById("textoInicial").value;
+      let novoDeslocamento = Number(deslocamento.value) 
+      let textoFinal = cipher.decode(novoDeslocamento, textoInicial);
+      document.getElementById("textoFinal").innerHTML = textoFinal;
+  }
+  
+  
+  document.getElementById("btnLess").addEventListener("click", less)
+  document.getElementById("btnMore").addEventListener("click", more)
 
-
-
-
-//console.log(cipher);
+  document.getElementById("formValor").addEventListener("click", escolha)
+  
+  document.getElementById("cifrar").addEventListener("click", cifrar)
+  document.getElementById("decifrar").addEventListener("click", decifrar)
