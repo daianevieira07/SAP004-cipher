@@ -18,29 +18,32 @@ const cipher = {
 
     }
     return mensagemFinal;
+  },
+
+
+  decode(deslocamento, textoInicial) {
+    textoInicial = textoInicial.toUpperCase();
+let textoInicial = [];
+let mensagemFinal = "";
+
+deslocamento = Number(deslocamento);
+
+for (let i = 0; i < textoInicial.length; i++) {
+  textoInicial[i] = (textoInicial.charAt(i));
+  textoInicial[i] = (((textoInicial[i].charCodeAt(0) - 90 - deslocamento) % 26) + 90);
+
+  if (textoInicial[i] != " ") {
+    mensagemFinal += String.fromCharCode(textoInicial[i]);
   }
-
-}
-decode(deslocamento, textoInicial); {
-  textoInicial = textoInicial.toUpperCase();
-  let textoInicial = [];
-  let mensagemFinal = "";
-
-  deslocamento = Number(deslocamento);
-
-  for (let i = 0; i < textoInicial.length; i++) {
-    textoInicial[i] = (textoInicial.charAt(i));
-    textoInicial[i] = (((textoInicial[i].charCodeAt(0) - 90 - deslocamento) % 26) + 90);
-
-    if (textoInicial[i] != " ")
-      mensagemFinal += String.fromCharCode(textoInicial[i]);
-    else
-      mensagemFinal += " ";
+  else {
+    mensagemFinal += " ";
 
     return mensagemFinal;
   }
 }
 
-export default cipher;
 
+  }
+}
+export default cipher;
 

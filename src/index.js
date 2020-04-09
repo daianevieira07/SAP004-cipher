@@ -1,4 +1,4 @@
-/*import cipher from './cipher.js';*/
+import cipher from './cipher.js';
 
 
 let deslocamento = document.getElementById("deslocamento")
@@ -50,7 +50,7 @@ function cifrar() {
   document.getElementById("btnLess").addEventListener("click", less)
   document.getElementById("btnMore").addEventListener("click", more)
 
-  document.getElementById("formValor").addEventListener("click", escolha)
+ // document.getElementById("formValor").addEventListener("click", escolha)
   
   document.getElementById("cifrar").addEventListener("click", cifrar)
   document.getElementById("decifrar").addEventListener("click", decifrar)
