@@ -1,7 +1,7 @@
 
 const cipher = {
 
-  encode(deslocamento, textoInicial) {
+  encode: function (deslocamento, textoInicial) {
     textoInicial = textoInicial.toUpperCase();
     let mensagemInicial = [];
     let mensagemFinal = "";
@@ -16,31 +16,33 @@ const cipher = {
       else
         mensagemFinal += " ";
 
+
+      return mensagemFinal;
     }
-    return mensagemFinal;
   },
 
 
-  decode(deslocamento, textoInicial) {
+  decode: function (deslocamento, textoInicial) {
     textoInicial = textoInicial.toUpperCase();
-let textoInicial = [];
-let mensagemFinal = "";
+    let mensagemInicial = [];
+    let mensagemFinal = "";
 
-deslocamento = Number(deslocamento);
+    deslocamento = Number(deslocamento);
 
-for (let i = 0; i < textoInicial.length; i++) {
-  textoInicial[i] = (textoInicial.charAt(i));
-  textoInicial[i] = (((textoInicial[i].charCodeAt(0) - 90 - deslocamento) % 26) + 90);
+    for (let i = 0; i < textoInicial.length; i++) {
+      mensagemInicial[i] = (textoInicial.charAt(i));
+      mensagemInicial[i] = (((mensagemInicial[i].charCodeAt(0) - 90 - deslocamento) % 26) + 90);
 
-  if (textoInicial[i] != " ") {
-    mensagemFinal += String.fromCharCode(textoInicial[i]);
-  }
-  else {
-    mensagemFinal += " ";
+      if (textoInicial[i] != " ") {
+        mensagemFinal += String.fromCharCode(textoInicial[i]);
+      }
+      else {
+        mensagemFinal += " ";
+      }
 
-    return mensagemFinal;
-  }
-}
+      return mensagemFinal;
+
+    }
 
 
   }

@@ -1,8 +1,8 @@
 import cipher from './cipher.js';
 
 
-let deslocamento = document.getElementById("deslocamento")
-let deslocamento1 = 1
+ var deslocamento = document.getElementById("deslocamento")
+ var deslocamento1 = 1
 
 function less() {
     if (deslocamento1 > 1) {
@@ -21,17 +21,6 @@ function more() {
 }
 
 
-function escolha() {
-    if (formValor.valorRadio.value == "cifrar") {
-     
-      cifrar()
-    }
-    else {
-     
-     decifrar ()
-    }
-}
-
 function cifrar() {
       let textoInicial = document.getElementById("textoInicial").value;
       let novoDeslocamento = Number(deslocamento.value) 
@@ -49,8 +38,5 @@ function cifrar() {
   
   document.getElementById("btnLess").addEventListener("click", less)
   document.getElementById("btnMore").addEventListener("click", more)
-
- // document.getElementById("formValor").addEventListener("click", escolha)
-  
   document.getElementById("cifrar").addEventListener("click", cifrar)
   document.getElementById("decifrar").addEventListener("click", decifrar)

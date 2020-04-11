@@ -24,31 +24,20 @@
     <span id="deslocamento">1</span>
     <button id="btnMore" class="button">+</button><br /><br />
 
+    <button id="cifrar" class="btnCifDecif"> Cifrar </button>
+    <button id="decifrar" class="btnCifDecif"> Decifrar </button>
 
-    <!--<form id="formValor" >
-      <input type="radio" checked="true" name="valorRadio" value="cifrar"><label>Cifrar</label>
-      <input type="radio" name="valorRadio" value="decifrar"><label>Decifrar</label>
-    </form>-->
-
-    <textarea name="textoInicial" id="textoInicial" class="caixaTexto" cols="30" rows="10"
-      required></textarea><br /><br />
-
-    <button id="cifrar">Fazer a mágica acontecer! </button><br /><br />
-    <button id="decifrar">Fazer a mágica acontecer! </button><br /><br />
-
-    <textarea name="textoFinal" id="textoFinal" class="caixaTexto" cols="30" rows="10" disabled></textarea>
-
-    <button id="refazer" type="reset"> Refazer </button>
-
-
-
-
+    <form>
+      <textarea name="textoInicial" id="textoInicial" class="caixaTexto" cols="30" rows="10" required></textarea><br />
+      <textarea name="textoFinal" id="textoFinal" class="caixaTexto" cols="30" rows="10" disabled></textarea><br />
+      <input type="reset" id="refazer"> 
+    </form>
 
 
   </div>
 
+  <script src="index.js" type="module"> </script>
 
-  <script src="index.js"></script>
 </body>
 
 </html>
