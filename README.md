@@ -31,7 +31,7 @@ O produto será a "Caixinha das Senhas", que terá como:
 
 * Solução: Basta escolher uma palavra ou frase que possa ser sua senha padrão, escolher um número de 1 a 33 e terá um código, que poderá ser anotado facilmente em uma agenda por exemplo, sem correr o rico de que alguém leia e veja que é uma senha. Se esquecer a mensagem, basta voltar à **Caixinha das Senhas** e decodificar o código que estava guardado.  
 
-Acesse a página [link](https://daianevieira07.github.io/SAP004-cipher/src/) e comece a veja como é fácil!
+Acesse a página [link](https://daianevieira07.github.io/SAP004-cipher/src/) e veja como é fácil!
 
 
 
