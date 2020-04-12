@@ -18,7 +18,7 @@ const cipher = {
         mensagemFinal += String.fromCharCode(mensagemInicial[i]);
       }
       else {
-        mensagemFinal += " ";
+        mensagemFinal += "";
       }
     }
     return mensagemFinal;
@@ -38,12 +38,13 @@ const cipher = {
       mensagemInicial[i] = (((mensagemInicial[i].charCodeAt(0) - 90 - deslocamento) % 26) + 90);
 
 
-      if (mensagemInicial[i] != " ") {
+      if (textoInicial[i] != " ") {
         mensagemFinal += String.fromCharCode(mensagemInicial[i]);
       }
       else {
-        mensagemFinal += " ";
+        mensagemFinal += "";
       }
+    }
 
       return mensagemFinal;
 
@@ -51,7 +52,7 @@ const cipher = {
     }
 
 
-  }
+  
 }
 export default cipher;
 

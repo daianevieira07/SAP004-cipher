@@ -23,14 +23,12 @@ function more() {
 
 function cifrar() {
       let textoInicial = document.getElementById("textoInicial").value;
-      //let deslocamento1 = Number(deslocamento1.value) 
       let textoFinal = cipher.encode(deslocamento1, textoInicial);
       document.getElementById("textoFinal").innerHTML = textoFinal;
   }
   
   function decifrar() {
       let textoInicial = document.getElementById("textoInicial").value;
-      //let deslocamento1 = Number(deslocamento1.value) 
       let textoFinal = cipher.decode(deslocamento1, textoInicial);
       document.getElementById("textoFinal").innerHTML = textoFinal;
   }
