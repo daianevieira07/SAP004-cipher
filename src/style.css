@@ -8,7 +8,7 @@ body {
     width: 700px;
     max-width: 85%;
     height: 550px;
-    border-radius: 15px;
+    border-radius: 20px;
     border-color: silver;
     margin: auto;
     position: relative;
@@ -30,22 +30,25 @@ body {
 }
 
 h1 {
-    font-style: oblique;
-    color: rgb(101, 252, 181);
+    font-family: Georgia;
+    color: rgb(56, 243, 156);
     text-align: center;
     font-size: 40px;
     float: inline-end;
 }
 
 .h2 {
-    font-size: 15px;
+    font-size: 13px; 
+    font-family: Georgia;
+    color: rgb(11, 11, 65);
     font-style: oblique;
     text-align: center;
     float: inline-end;
 }
 
 h3 {
-    color: black;
+    font-family: Georgia;
+    color: arial bold;
     text-align: center;
     font-size: 15px;
     float: inline-end;
@@ -62,17 +65,21 @@ h3 {
 }
 
 button {
+    font-family: Georgia;
+    font-size: 20px;
     width: 50px;
     height: 50px;
     border-radius: 15px;
-    background-color: rgb(101, 252, 181);
+    background-color: rgb(56, 243, 156);
     border-color: silver;
 }
 .btnCifDecif{
+    font-family: Georgia;
+    font-size:15px ;
     width: 100px;
     height: 50px;
     border-radius: 15px;
-    background-color: rgb(101, 252, 181);
+    background-color: rgb(56, 243, 156);
     border-color: silver;
 
 }
@@ -85,7 +92,7 @@ button {
     width: 70px;
     height: 50px;
     border-radius: 15px;
-    background-color: rgb(101, 252, 181);
+    background-color: rgb(56, 243, 156);
     border-color: silver;
     max-width: 85%;
     display: flex;
