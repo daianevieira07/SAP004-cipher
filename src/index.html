@@ -13,8 +13,11 @@
 </head>
 
 <body>
+  
   <div class="mainBox">
     <h1> Caixinha das Senhas </h1>
+  
+
 
     <div class="h2">
       <h2> Se você tem problemas pra lembrar suas senhas, você está no lugar certo! </h2>
@@ -26,19 +29,22 @@
     <span id="label"> Escolha seu código "De 1 a 33" </span>
     <button id="btnLess" class="button">-</button>
     <span id="deslocamento">1</span>
-    <button id="btnMore" class="button">+</button><br /><br />
+    <button id="btnMore" class="button">+</button><br/><br/>
 
     <button id="cifrar" class="btnCifDecif"> Cifrar </button>
-    <button id="decifrar" class="btnCifDecif"> Decifrar </button>
+    <button id="decifrar" class="btnCifDecif"> Decifrar </button> </br><br />
 
     <form>
-      <textarea name="textoInicial" id="textoInicial" class="caixaTexto" cols="30" rows="10" required></textarea><br />
+      <textarea name="textoInicial" id="textoInicial" class="caixaTexto" cols="30" rows="10" placeholder="Insira aqui a sua mensagem" required></textarea><br />
       <textarea name="textoFinal" id="textoFinal" class="caixaTexto" cols="30" rows="10" disabled></textarea>
-      <input type="reset" id="refazer">
+      <button type="reset" id="refazer"> Refazer</button>
+    
     </form>
-
+    
+    
 
   </div>
+
   <script src="index.js" type="module"> </script>
 
 </body>
