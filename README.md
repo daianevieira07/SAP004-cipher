@@ -24,7 +24,8 @@ interagir com o usuário final através do navegador. Nela o usuário poderá ci
 indicando a chave de deslocamento (_offset_).
 
 
-![img](/-cipher/tela.jpg)
+![Tela](daianevieira07/SAP004-cipher/tela.jpg)
+
 
 
 O produto será a "Caixinha das Senhas", que terá como:
