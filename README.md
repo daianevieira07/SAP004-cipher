@@ -24,7 +24,8 @@ interagir com o usuário final através do navegador. Nela o usuário poderá ci
 indicando a chave de deslocamento (_offset_).
 
 
-![Tela](daianevieira07/SAP004-cipher/tela.jpg)
+![tela](https://user-images.githubusercontent.com/61718653/79084967-ffa05a80-7d0c-11ea-9a7c-02632d61edae.jpg)
+
 
 
 
